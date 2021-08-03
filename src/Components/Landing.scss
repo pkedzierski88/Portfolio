@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+$primaryGrey: #ccd1d6;
+$primaryYellow: #ffc107;
+$darkYellow: #d79900;
+
+@mixin greetingStyle {
+  color: $primaryYellow;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.landing-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../Images/landing-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+
+  .container {
+    padding-top: 10rem;
+
+    .image-profile {
+      width: 15rem;
+      border-radius: 50%;
+      padding: 5px;
+      border: 2px solid $primaryYellow;
+    }
+
+    .greeting {
+      color: $primaryGrey;
+      font-size: 2.2rem;
+      letter-spacing: 0.125rem;
+      line-height: 3.5rem;
+
+      span#name {
+        @include greetingStyle;
+      }
+      .typed-text {
+        @include greetingStyle;
+        border-bottom: 1px solid $primaryYellow;
+      }
+    }
+
+    .row-bottom {
+      padding-top: 7rem;
+
+      button {
+        background-color: $primaryYellow;
+        font-weight: 700;
+
+        &:hover {
+          background-color: $darkYellow;
+          border-color: $darkYellow;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .image-profile {
+        width: 13rem;
+      }
+
+      .greeting {
+        padding-top: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+        line-height: 3rem;
+      }
+
+      .row-bottom {
+        padding-top: 5rem;
+      }
+    }
+  }
+}
