@@ -1,0 +1,25 @@
+@import './colorVariables';
+
+.navbar-wrapper {
+  .nav-link,
+  .navbar-brand {
+    border-bottom: 2px solid transparent;
+    margin: 0 1rem;
+    color: $primaryGrey !important;
+    font-size: 1.125rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $lightGrey !important;
+      border-bottom: 2px solid $primaryYellow;
+    }
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .fas {
+    margin-right: 0.5rem;
+  }
+}

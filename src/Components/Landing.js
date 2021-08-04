@@ -14,7 +14,7 @@ const Landing = () => {
           <div className="col-md-8">
             <div className="greeting">
               Hello, my name is <span id="name">Piotr Kędzierski</span> and I'm
-              a
+              a:
               <br />
               <Typed
                 className="typed-text"
@@ -35,7 +35,7 @@ const Landing = () => {
         <div className="row row-bottom text-center">
           <div className="col">
             <button type="button" class="btn btn-warning btn-lg">
-              Learn More
+              Find Out More
             </button>
           </div>
         </div>
