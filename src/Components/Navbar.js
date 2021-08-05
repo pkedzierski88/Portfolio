@@ -26,9 +26,9 @@ const Navbar = () => {
             id="navbarNavAltMarkup"
           >
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#a">
+              <a class="nav-link" aria-current="page" href="#about-me">
                 <i class="fas fa-user"></i>
-                About
+                About Me
               </a>
               <a class="nav-link" href="#a">
                 <i class="fas fa-hand-sparkles"></i>

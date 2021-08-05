@@ -1,0 +1,32 @@
+@import './colorVariables';
+
+.about-me-wrapper {
+  padding: 6.5rem 0;
+  background-color: $lightGrey;
+
+  .image-cyclist {
+    width: 20rem;
+    border-radius: 3%;
+  }
+
+  h1 {
+    color: $primaryYellow;
+  }
+
+  .personal-info {
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2.5rem 0;
+
+    h1 {
+      padding-top: 1.5rem;
+    }
+
+    .personal-info {
+      padding: 0 0.75rem;
+    }
+  }
+}
