@@ -1,4 +1,4 @@
-@import './colorVariables';
+@import './helpers/colorVariables';
 
 @mixin greetingStyle {
   color: $primaryYellow;
@@ -11,6 +11,7 @@
     url('../Images/landing-bg.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
 
   .container {

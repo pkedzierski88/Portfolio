@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="navbar-wrapper">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#a">
+          <a class="navbar-brand" href="#landing-page">
             <i class="fas fa-home"></i>
             Home
           </a>
@@ -30,11 +30,11 @@ const Navbar = () => {
                 <i class="fas fa-user"></i>
                 About Me
               </a>
-              <a class="nav-link" href="#a">
+              <a class="nav-link" href="#my-skills">
                 <i class="fas fa-hand-sparkles"></i>
                 Skills
               </a>
-              <a class="nav-link" href="#a">
+              <a class="nav-link" href="#projects">
                 <i class="fas fa-file-powerpoint"></i>
                 Projects
               </a>

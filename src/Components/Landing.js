@@ -5,7 +5,7 @@ import './Landing.scss';
 
 const Landing = () => {
   return (
-    <div className="landing-wrapper">
+    <div id="landing-page" className="landing-wrapper">
       <div className="container">
         <div className="row align-items-center text-center">
           <div className="col-md-4">
@@ -34,7 +34,7 @@ const Landing = () => {
         </div>
         <div className="row row-bottom text-center">
           <div className="col">
-            <button type="button" class="btn btn-warning btn-lg">
+            <button type="button" className="btn btn-warning btn-lg">
               Find Out More
             </button>
           </div>

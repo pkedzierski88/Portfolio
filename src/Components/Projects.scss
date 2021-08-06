@@ -1,0 +1,10 @@
+@import './helpers/colorVariables';
+
+.projects-wrapper {
+  background-color: $lightGrey;
+
+  h1 {
+    color: $primaryYellow;
+    margin: 3rem 0;
+  }
+}
