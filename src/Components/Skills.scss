@@ -1,11 +1,12 @@
 @import './helpers/colorVariables';
 
 .skills-wrapper {
+  padding: 6.5rem 0;
   background: $primaryWhite;
 
   h1 {
     color: $primaryYellow;
-    margin-top: 4rem;
+
     margin-bottom: 5rem;
   }
 
@@ -17,16 +18,16 @@
       transform: scale(1.35);
     }
 
+    h5 {
+      color: $primaryDark;
+    }
+
     .fab,
     .fas {
       font-size: 5.5rem;
       margin: 0 3rem;
       margin-bottom: 5rem;
     }
-  }
-
-  .bottom-column {
-    margin-bottom: 3rem;
   }
 
   .fa-html5 {

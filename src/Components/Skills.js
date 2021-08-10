@@ -55,14 +55,22 @@ const Skills = () => {
             {skills
               .filter((skill) => skill.id <= 4)
               .map((skill) => (
-                <SingleSkill text={skill.text} classes={skill.classes} />
+                <SingleSkill
+                  key={skill.id}
+                  text={skill.text}
+                  classes={skill.classes}
+                />
               ))}
           </div>
           <div className="col-12 bottom-column">
             {skills
               .filter((skill) => skill.id > 4)
               .map((skill) => (
-                <SingleSkill text={skill.text} classes={skill.classes} />
+                <SingleSkill
+                  key={skill.id}
+                  text={skill.text}
+                  classes={skill.classes}
+                />
               ))}
           </div>
         </div>

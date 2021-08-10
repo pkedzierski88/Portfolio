@@ -1,10 +1,41 @@
 @import './helpers/colorVariables';
 
 .projects-wrapper {
+  padding: 4rem 0;
   background-color: $lightGrey;
 
-  h1 {
-    color: $primaryYellow;
-    margin: 3rem 0;
+  .container {
+    max-width: 45rem;
+
+    h1 {
+      color: $primaryYellow;
+      padding-bottom: 2.5rem;
+    }
+
+    img {
+      border-radius: 1.5%;
+    }
+
+    .project-info {
+      margin: 1.75rem;
+      color: $primaryDark;
+
+      a {
+        color: $primaryDark;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.25rem;
+        border-bottom: 2px solid $primaryYellow;
+      }
+    }
+
+    .control-arrow,
+    .control-arrow:hover {
+      background-color: transparent;
+    }
+
+    .thumbs-wrapper {
+      margin: 0;
+    }
   }
 }

@@ -4,14 +4,14 @@ import './Navbar.scss';
 const Navbar = () => {
   return (
     <div className="navbar-wrapper">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#landing-page">
-            <i class="fas fa-home"></i>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div className="container">
+          <a className="navbar-brand" href="#landing-page">
+            <i className="fas fa-home"></i>
             Home
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -19,27 +19,27 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
+            className="collapse navbar-collapse justify-content-end"
             id="navbarNavAltMarkup"
           >
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#about-me">
-                <i class="fas fa-user"></i>
+            <div className="navbar-nav">
+              <a className="nav-link" aria-current="page" href="#about-me">
+                <i className="fas fa-user"></i>
                 About Me
               </a>
-              <a class="nav-link" href="#my-skills">
-                <i class="fas fa-hand-sparkles"></i>
+              <a className="nav-link" href="#my-skills">
+                <i className="fas fa-hand-sparkles"></i>
                 Skills
               </a>
-              <a class="nav-link" href="#projects">
-                <i class="fas fa-file-powerpoint"></i>
+              <a className="nav-link" href="#projects">
+                <i className="fas fa-file-powerpoint"></i>
                 Projects
               </a>
-              <a class="nav-link" href="#a">
-                <i class="fas fa-envelope"></i>
+              <a className="nav-link" href="#a">
+                <i className="fas fa-envelope"></i>
                 Contact
               </a>
             </div>
