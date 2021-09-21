@@ -8,18 +8,26 @@ import './Projects.scss';
 const Projects = () => {
   const projects = [
     {
+      id: 1,
       title: '*OLD* Games Blog',
       description:
         'Games Blog App with RESTful routes, authentication and authorization.',
       screenshot: gamesBlog,
-      link: 'https://games-blog.herokuapp.com/',
+      link: {
+        website: 'https://games-blog.herokuapp.com/',
+        code: 'https://github.com/pkedzierski88/Games_Blog',
+      },
     },
     {
+      id: 2,
       title: '*OLD* Todo List',
       description:
         'Simple Todo List as a Single Page App using AJAX and jQuery.',
       screenshot: todoList,
-      link: 'https://lista-twoich-zadan.herokuapp.com/todos',
+      link: {
+        website: 'https://lista-twoich-zadan.herokuapp.com/todos',
+        code: 'https://github.com/pkedzierski88/Todo_List',
+      },
     },
   ];
 
@@ -32,18 +40,21 @@ const Projects = () => {
           infiniteLoop={true}
           interval={4000}
           useKeyboardArrows={true}
-          showStatus={false}
           showIndicators={false}
           showArrows={false}
+          showStatus={false}
         >
           {projects.map((project) => (
-            <div>
+            <div key={project.id}>
               <img src={project.screenshot} alt={project.title} />
               <div className="project-info">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <a href={project.link} target="_blank" rel="noreferrer">
-                  Check Me
+                <a href={project.link.website} target="_blank" rel="noreferrer">
+                  <button className="btn btn-primary mx-1">Website</button>
+                </a>
+                <a href={project.link.code} target="_blank" rel="noreferrer">
+                  <button className="btn btn-primary mx-1">Code</button>
                 </a>
               </div>
             </div>

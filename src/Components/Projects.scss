@@ -21,11 +21,8 @@
       color: $primaryDark;
 
       a {
-        color: $primaryDark;
-        text-transform: uppercase;
+        color: $lightGrey;
         text-decoration: none;
-        font-size: 1.25rem;
-        border-bottom: 2px solid $primaryYellow;
       }
     }
 
@@ -36,6 +33,10 @@
 
     .thumbs-wrapper {
       margin: 0;
+
+      ul {
+        padding: 0;
+      }
     }
   }
 }

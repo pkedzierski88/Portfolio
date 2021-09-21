@@ -1,0 +1,21 @@
+@import '../helpers/colorVariables';
+
+.contact-wrapper {
+  padding: 4rem 0;
+
+  .container {
+    h1 {
+      color: $primaryYellow;
+      padding-bottom: 2.5rem;
+    }
+
+    input,
+    textarea {
+      border: none;
+      border-bottom: 1px solid $primaryDark;
+      border-radius: 0;
+      padding: 0.7rem 0;
+      box-shadow: none;
+    }
+  }
+}

@@ -13,6 +13,7 @@
     "react-particles-js": "^3.5.3",
     "react-responsive-carousel": "^3.2.20",
     "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.4",
     "react-typed": "^1.2.0",
     "web-vitals": "^1.1.2"
   },

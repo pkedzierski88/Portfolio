@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -6,10 +7,10 @@ const Navbar = () => {
     <div className="navbar-wrapper">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div className="container">
-          <a className="navbar-brand" href="#landing-page">
+          <Link to="landing-page" className="navbar-brand" href="#">
             <i className="fas fa-home"></i>
             Home
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -26,22 +27,22 @@ const Navbar = () => {
             id="navbarNavAltMarkup"
           >
             <div className="navbar-nav">
-              <a className="nav-link" aria-current="page" href="#about-me">
+              <Link to="about-me" offset={-65} className="nav-link" href="#">
                 <i className="fas fa-user"></i>
                 About Me
-              </a>
-              <a className="nav-link" href="#my-skills">
+              </Link>
+              <Link to="my-skills" offset={-65} className="nav-link" href="#">
                 <i className="fas fa-hand-sparkles"></i>
                 Skills
-              </a>
-              <a className="nav-link" href="#projects">
+              </Link>
+              <Link to="projects" offset={-65} className="nav-link" href="#">
                 <i className="fas fa-file-powerpoint"></i>
                 Projects
-              </a>
-              <a className="nav-link" href="#a">
+              </Link>
+              <Link to="contacts" className="nav-link" href="#">
                 <i className="fas fa-envelope"></i>
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </div>

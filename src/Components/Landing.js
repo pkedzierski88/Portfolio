@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import Typed from 'react-typed';
 import author from '../Images/me.jpg';
 import './Landing.scss';
@@ -34,9 +35,11 @@ const Landing = () => {
         </div>
         <div className="row row-bottom text-center">
           <div className="col">
-            <button type="button" className="btn btn-warning btn-lg">
-              Find Out More
-            </button>
+            <Link to="about-me" offset={-65}>
+              <button type="button" className="btn btn-warning btn-lg">
+                Find Out More
+              </button>
+            </Link>
           </div>
         </div>
       </div>
