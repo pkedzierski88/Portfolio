@@ -1,0 +1,65 @@
+@import './helpers/colorVariables';
+
+@mixin focusStyle {
+  font-weight: 500;
+  color: $darkYellow;
+}
+
+@mixin messageStyle($color) {
+  color: $color;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.contact-wrapper {
+  padding: 4rem 0;
+
+  .container {
+    h1 {
+      color: $primaryYellow;
+      padding-bottom: 1rem;
+    }
+
+    input,
+    textarea {
+      margin: 0;
+      border: none;
+      border-bottom: 1px solid $primaryDark;
+      border-radius: 0;
+      padding: 0.85rem 0;
+      box-shadow: none;
+
+      &:focus {
+        @include focusStyle;
+        border-bottom: 1px solid $darkYellow;
+
+        &::placeholder {
+          @include focusStyle;
+        }
+      }
+    }
+
+    textarea {
+      height: 13.125rem;
+    }
+
+    .btn-contact,
+    .btn-loading {
+      width: 100%;
+    }
+
+    .success-message {
+      @include messageStyle($primaryGreen);
+    }
+
+    .default-message {
+      @include messageStyle($primaryDark);
+    }
+
+    @media (max-width: 768px) {
+      textarea {
+        height: 8rem;
+      }
+    }
+  }
+}

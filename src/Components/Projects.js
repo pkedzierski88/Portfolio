@@ -9,7 +9,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: '*OLD* Games Blog',
+      title: 'Games Blog',
       description:
         'Games Blog App with RESTful routes, authentication and authorization.',
       screenshot: gamesBlog,
@@ -20,7 +20,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: '*OLD* Todo List',
+      title: 'Todo List',
       description:
         'Simple Todo List as a Single Page App using AJAX and jQuery.',
       screenshot: todoList,

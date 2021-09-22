@@ -39,7 +39,7 @@ const Navbar = () => {
                 <i className="fas fa-file-powerpoint"></i>
                 Projects
               </Link>
-              <Link to="contacts" className="nav-link" href="#">
+              <Link to="contacts" offset={-65} className="nav-link" href="#">
                 <i className="fas fa-envelope"></i>
                 Contact
               </Link>
