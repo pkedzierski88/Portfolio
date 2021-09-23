@@ -1,0 +1,40 @@
+@import './helpers/colorVariables';
+
+@mixin standard-look {
+  text-decoration: none;
+  color: $primaryGrey;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-wrapper {
+  padding: 1.25rem 0;
+  color: $primaryGrey;
+
+  .footer-link {
+    @include standard-look;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    margin: 1.25rem;
+    font-size: 1.025rem;
+    padding-bottom: 5px;
+
+    &:hover {
+      color: $lightGrey;
+      border-bottom: 2px solid $primaryYellow;
+    }
+  }
+
+  a {
+    @include standard-look;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      color: $lightGrey;
+      border-bottom: 1px solid $primaryYellow;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
